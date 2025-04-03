@@ -26,9 +26,7 @@ namespace WpfGyakorlas.View
             InitializeComponent();
             EditedRContact = contact;
 
-            nametxtb.Text = EditedRContact.Name;
-            emailtxtb.Text = EditedRContact.Email;
-            teltxtb.Text = EditedRContact.Phone;
+            DataContext = EditedRContact;
 
         }
 

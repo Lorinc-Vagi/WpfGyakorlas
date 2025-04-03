@@ -23,9 +23,9 @@
         <Label HorizontalAlignment="Right" Grid.Row="1"  Content="Név"/>
         <Label HorizontalAlignment="Right" Grid.Row="2" Content="Email"/>
         <Label HorizontalAlignment="Right" Grid.Row="3" Content="Tel.:"/>
-        <TextBox x:Name="nametxtb" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" Text="" Width="300" Height="30" HorizontalAlignment="Left"/>
-        <TextBox x:Name="emailtxtb" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" Text="" Width="300" Height="30" HorizontalAlignment="Left"/>
-        <TextBox x:Name="teltxtb" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" Text="" Width="300" Height="30" HorizontalAlignment="Left"/>
+        <TextBox x:Name="nametxtb" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name}" Width="300" Height="30" HorizontalAlignment="Left"/>
+        <TextBox x:Name="emailtxtb" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Email}" Width="300" Height="30" HorizontalAlignment="Left"/>
+        <TextBox x:Name="teltxtb" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Phone}" Width="300" Height="30" HorizontalAlignment="Left"/>
         <Button Name="EdditContactbttn" Grid.Row="5" Grid.ColumnSpan="2" Content="infó Módosítása" Width="100" Height="50" Click="EdditContactbttn_Click" />
 
 
